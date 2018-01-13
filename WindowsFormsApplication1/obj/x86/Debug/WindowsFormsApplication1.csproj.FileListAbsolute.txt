@@ -1,0 +1,10 @@
+C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Arandov\Desktop\FUSO\NewUI\WindowsFormsApplication1\bin\Debug\Database5.accdb

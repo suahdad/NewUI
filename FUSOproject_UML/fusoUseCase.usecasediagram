@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0e50a4a0-bc6b-45ad-ba03-3bed6c0153be" name="fusoUseCase" linkedPackageId="c0de0682-a0df-423f-9f6d-4ccc34ecb490" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="36181578-bac3-4384-9f01-bb4f3986b129">
+      <elementDefinition Id="e61168b6-d5cb-4c23-812f-f183431898a0" />
+      <body>Processing Department Data Flow</body>
+      <annotatedElements>
+        <subsystemMoniker Id="1c209bd0-380e-496b-a8a4-8839683eacee" LastKnownName="Processing Department System" />
+      </annotatedElements>
+    </comment>
+    <comment Id="aa8c4ce9-b845-4bde-86e0-87b3b2cfd369">
+      <elementDefinition Id="f6416b25-a8f8-438f-b825-01b4bd186ed5" />
+      <body>Accounting Department Dataflow</body>
+      <annotatedElements>
+        <subsystemMoniker Id="4000d2d7-8c03-4142-bede-a198d6205f4a" LastKnownName="Accounting Department" />
+      </annotatedElements>
+    </comment>
+    <comment Id="ab1051cb-0883-4f52-94f8-6c222c6a60da">
+      <elementDefinition Id="6b22d3cc-f9e3-4cba-96db-68420d19be97" />
+      <body>Functions of the Accounting Database System</body>
+      <annotatedElements>
+        <subsystemMoniker Id="9e245f23-860a-4342-bf45-64cba3e30dde" LastKnownName="Accounting Database System" />
+      </annotatedElements>
+    </comment>
+    <comment Id="81075af6-68d9-4b73-afaa-19de976b5c74">
+      <elementDefinition Id="c230ffdb-57a7-4fd3-8a7b-df31fa1c9c31" />
+      <body>Functions of the Settings</body>
+      <annotatedElements>
+        <subsystemMoniker Id="9194db0a-07e9-49dc-8428-5bd3f41b3f06" LastKnownName="Settings" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9facfe49-15e1-4483-9761-c9dc8906e50a" name="Processing" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90a2f071-d39d-4bb4-8d81-f91f5dda54b6" />
+        <targetEnds>
+          <association Id="4cabe90a-e990-40af-ba9a-6ccd4b14834f" isDerived="false" sourceEndRoleName="Processing" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="85b7878e-7033-4fa8-9dcb-1a28667e20d8" LastKnownName="Process Documents" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d527ce5-f157-4fbd-821e-c9f8051bdf83" name="Processing" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="93baf263-01c5-4dd4-8733-da908a2cead3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0f1c9c1d-1acc-4ed3-a9a3-65b9def57648" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8b3d421c-7ec1-494c-9a51-f689ba37ff35" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0e1e0d22-9c89-4117-aa27-0ac60890e1ba" />
+          </association>
+          <association Id="c96f6fee-1127-4a63-90bc-37afd5552e80" isDerived="false" sourceEndRoleName="Processing" targetEndRoleName="Create Job Orders" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="07dffd22-189f-4a73-b11c-0410d96f984b" LastKnownName="Create Job Orders" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="529a4f7b-2ad9-447b-b1c4-8e859bf0131f" name="Processing" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3738962c-f53d-4034-bcb1-715721836190" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7cc077c9-8c18-4f71-8d6b-80101046fd17" name="Create Job Orders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="866c30f7-e19a-47d8-a288-386363c652b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4200af93-c691-47e5-856c-336433ce1ff2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="85b7878e-7033-4fa8-9dcb-1a28667e20d8" name="Process Documents" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="76c1fee3-091d-4654-9066-fa542e152594" />
+        <additions>
+          <include Id="0fcee3df-6f60-4f4c-8072-e30251fc2d4d">
+            <useCaseMoniker Id="3cff11a0-f7be-4b12-a133-961e4e1d6fff" LastKnownName="Log to Processing Database" />
+            <elementDefinition Id="fd26ce52-a877-480b-8332-a11e6e12d452" />
+          </include>
+          <include Id="50a5764b-ba21-4d78-af30-c84dd7787de1">
+            <useCaseMoniker Id="d8296722-6a4f-4dde-b7e5-6c6636ad2fd4" LastKnownName="Print Permits" />
+            <elementDefinition Id="88382d9f-381a-4d14-8c22-0c46da2fd3dc" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="1c209bd0-380e-496b-a8a4-8839683eacee" LastKnownName="Processing Department System" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="1c209bd0-380e-496b-a8a4-8839683eacee" name="Processing Department System" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e057eb82-b7c0-447a-a8e8-bb35da2c0810" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="3cff11a0-f7be-4b12-a133-961e4e1d6fff" name="Log to Processing Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="15f2c668-6909-45e5-bc8f-8a1f0dfa9b29" />
+        <targetEnds>
+          <association Id="32503d39-b9e2-4826-9205-d4a08ea93ce1" isDerived="false" sourceEndRoleName="Log to Processing Database" targetEndRoleName="Processing Database" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="01a0c43d-f3ea-498e-8d0d-59adaefe4e3d" LastKnownName="Processing Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="424093d1-d030-412d-8797-42da3bd431d6" name="Log to Processing Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7d83f817-00bc-44a5-827a-f20314f36a1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd3bd4cc-ce36-4019-bc9d-76d6fa604123" name="Processing Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="83e49e54-225e-4bd0-a3d6-317346e581aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ae144bbe-3a83-4f6a-a7dc-3d740640b38a" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="1c209bd0-380e-496b-a8a4-8839683eacee" LastKnownName="Processing Department System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d8296722-6a4f-4dde-b7e5-6c6636ad2fd4" name="Print Permits" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="da164324-e222-4c08-87a1-3f25b85bb5ca" />
+        <subjects>
+          <subsystemMoniker Id="1c209bd0-380e-496b-a8a4-8839683eacee" LastKnownName="Processing Department System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="07dffd22-189f-4a73-b11c-0410d96f984b" name="Create Job Orders" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c5ec47c-e2ed-4412-a64c-5fa2edb41efb" />
+        <suppliersInternal>
+          <dependency Id="840a0294-d208-4ac7-9b3d-39f2a9ed79a8">
+            <useCaseMoniker Id="85b7878e-7033-4fa8-9dcb-1a28667e20d8" LastKnownName="Process Documents" />
+            <elementDefinition Id="bab00187-10a1-44e0-93b5-5b0e26b68b0d" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="3f0d7b91-1aaa-482f-a352-0708a348805d">
+            <useCaseMoniker Id="1cbc1059-67dd-4592-af29-a54363cb3dbf" LastKnownName="Update Document Entry in Database" />
+            <elementDefinition Id="7b79ccfc-d187-4d7d-80c6-a898dda2f43a" />
+          </include>
+          <include Id="4c311dc9-d4dc-4bcc-8080-75fe0088727a">
+            <useCaseMoniker Id="563c27cd-4a2d-4845-880f-ce39f1007d4b" LastKnownName="Print Job Orders" />
+            <elementDefinition Id="2ab2ad4b-c174-498e-b03f-f1d9a08921ca" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="1c209bd0-380e-496b-a8a4-8839683eacee" LastKnownName="Processing Department System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1cbc1059-67dd-4592-af29-a54363cb3dbf" name="Update Document Entry in Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e10058a3-e22b-4a20-b493-24b96c44522f" />
+        <targetEnds>
+          <association Id="fe797fa3-3b4e-4466-96a6-bd6dab16580f" isDerived="false" sourceEndRoleName="Update Document Entry in Database" targetEndRoleName="Processing Database" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="01a0c43d-f3ea-498e-8d0d-59adaefe4e3d" LastKnownName="Processing Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e1f18af7-2b97-413e-b5bf-abfa7c930439" name="Update Document Entry in Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="13b1543b-0673-4cc1-802f-abde96694c85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="80b83ab9-8dcf-42a0-ae79-9d377e2ef72a" name="Processing Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="80e22648-7c80-4196-91db-6d2fe4cf829c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4daa3313-f20b-4031-a579-5bf04e1392d2" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="1c209bd0-380e-496b-a8a4-8839683eacee" LastKnownName="Processing Department System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="563c27cd-4a2d-4845-880f-ce39f1007d4b" name="Print Job Orders" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3b90622-10b3-452a-8c7c-05b46c6dceb2" />
+        <subjects>
+          <subsystemMoniker Id="1c209bd0-380e-496b-a8a4-8839683eacee" LastKnownName="Processing Department System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="01a0c43d-f3ea-498e-8d0d-59adaefe4e3d" name="Processing Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2304b93b-47d4-4051-8953-ed99baff8af8" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="88acb96a-174a-40e5-b7f0-8673229b6aa1" name="Accounting" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e594b7a2-4d0a-428a-b66e-05271363cb5c" />
+        <targetEnds>
+          <association Id="d89a10d1-491e-4414-83a2-ad75e0c15a40" isDerived="false" sourceEndRoleName="Accounting" targetEndRoleName="Create Billing Invoices" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f4f3c43f-526b-4350-b747-d8648ff500a1" LastKnownName="Create Billing Invoices" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="371bae19-baad-4009-9107-bb516d3c0520" name="Accounting" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7283002-c602-4303-9520-f932ad9b7026" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="403e17a7-167a-4249-93bc-2f60f9d31464" name="Create Billing Invoices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0775dd98-9d71-4e10-be00-58a25423c97b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5581b4bc-a268-403a-89dd-ff418c45e176" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="4000d2d7-8c03-4142-bede-a198d6205f4a" name="Accounting Department" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="f4f3c43f-526b-4350-b747-d8648ff500a1" name="Create Billing Invoices" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71a52b70-c314-4f10-ab68-b67ca4e73408" />
+        <targetEnds>
+          <association Id="0c22da1a-5fce-44b9-8161-8b96291ae271" isDerived="false" sourceEndRoleName="Create Billing Invoices" targetEndRoleName="Accounting Database" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="37c65e1f-432d-4175-ba8c-8ee42634cf1c" LastKnownName="Accounting Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bfcca066-4e95-45d1-a877-34ea0de19666" name="Create Billing Invoices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f06ae9aa-974f-443d-b87c-117efef69ec2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c78a881c-c1bf-4e44-b28f-9b10c0bfc140" name="Accounting Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d0f1569-84b4-407b-a750-55de4e10b6b7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9b37ceb5-f339-4de5-aec2-36a2d2da0499" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="cecc6613-cab6-4420-86ef-a04f8fcfaff6">
+            <useCaseMoniker Id="546e631f-058f-4358-b86b-da7102f23246" LastKnownName="Update Accounting Database" />
+            <elementDefinition Id="2e0f51de-70f8-44e9-8ddb-ce3a1f9a4b2d" />
+          </include>
+          <include Id="bbf493d1-e8a9-44a1-9af9-8ff0bad61759">
+            <useCaseMoniker Id="fa4e9727-169a-4b18-86ca-dc05b6fb8136" LastKnownName="Print Billing Invoice" />
+            <elementDefinition Id="b7f955f7-0a92-4e5d-8b74-ad17d7aa6c67" />
+          </include>
+          <include Id="789f6eba-c811-4ae6-9588-8b7a434a16a0">
+            <useCaseMoniker Id="810629f6-488a-4d37-86fb-bc4e295a11e9" LastKnownName="Sorted By Company " />
+            <elementDefinition Id="f26af460-f0f5-47a8-b453-ce360b9696a3" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="4000d2d7-8c03-4142-bede-a198d6205f4a" LastKnownName="Accounting Department" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ca9659f1-09e3-4ef8-b1ac-db6f30623ffa" name="Job Orders" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f60f00ec-b292-4841-a1ac-6efe5531a51c" />
+        <generalsInternal>
+          <generalization Id="a3065ba7-b9b3-4589-8275-7555a2437009" isSubstitutable="false">
+            <useCaseMoniker Id="f4f3c43f-526b-4350-b747-d8648ff500a1" LastKnownName="Create Billing Invoices" />
+            <elementDefinition Id="b749f7cb-4d13-4f41-acc3-0a398dba33fc" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="4000d2d7-8c03-4142-bede-a198d6205f4a" LastKnownName="Accounting Department" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f2a84056-a284-45ca-a309-76b104e4ae58" name="Non-Job Orders" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="61b25354-6c7c-4924-a504-967946dd893e" />
+        <generalsInternal>
+          <generalization Id="11402aca-1133-4024-b7cd-ad1aef0da4e8" isSubstitutable="false">
+            <useCaseMoniker Id="f4f3c43f-526b-4350-b747-d8648ff500a1" LastKnownName="Create Billing Invoices" />
+            <elementDefinition Id="2edae14f-9a83-462a-a8d1-0a500474df23" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="4000d2d7-8c03-4142-bede-a198d6205f4a" LastKnownName="Accounting Department" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="546e631f-058f-4358-b86b-da7102f23246" name="Update Accounting Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b04e085f-13dd-4fa1-bbd8-34007ef4c52e" />
+        <targetEnds>
+          <association Id="90a6bbb5-5d7b-4192-a263-c592172c38c1" isDerived="false" sourceEndRoleName="Log to Accounting Database" targetEndRoleName="Accounting Database" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="37c65e1f-432d-4175-ba8c-8ee42634cf1c" LastKnownName="Accounting Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4b7961a1-54bb-413f-a67f-faede2989d97" name="Log to Accounting Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="012921cc-5d5e-4cb1-a99f-1bb30a409d46" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="32801348-5dd8-47f1-a5e3-0a856d947d4a" name="Accounting Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c853869e-58e2-49dc-92b0-0675f97c76a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0ccbe335-beeb-4bca-83df-b98ddb28dcda" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="4000d2d7-8c03-4142-bede-a198d6205f4a" LastKnownName="Accounting Department" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fa4e9727-169a-4b18-86ca-dc05b6fb8136" name="Print Billing Invoice" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0b790bf1-f554-4f2d-8691-4d29bdc355de" />
+        <subjects>
+          <subsystemMoniker Id="4000d2d7-8c03-4142-bede-a198d6205f4a" LastKnownName="Accounting Department" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="37c65e1f-432d-4175-ba8c-8ee42634cf1c" name="Accounting Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7107d373-0a48-47d4-9fa9-75fb39e95bfc" />
+        <targetEnds>
+          <association Id="56f41a48-7954-445b-a16f-f217a656e876" isDerived="false" sourceEndRoleName="Accounting Database" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="31151091-aac5-468d-8610-888447a03055" LastKnownName="Retrieve Processing Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="37ccf4cc-aede-4741-8a34-11f81ac6c4eb" name="Accounting Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3af83eb8-6f50-452f-9e4a-3e7b5ca34b0e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2d1ba2a-e9c6-494b-956f-e1d0c4d078da" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8b1042a7-84ef-48ff-ac86-bc3c4ca6b249" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c91a8d8a-debd-46ec-88d1-2db328ec696d" />
+          </association>
+          <association Id="b9f02d1b-d1c6-41a4-a7df-424b3a1aafe3" isDerived="false" sourceEndRoleName="Accounting Database" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f378f41f-f208-487a-a608-a6aaf0201e96" LastKnownName="Create Directory Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="006a4598-b4d5-4cfa-8c5c-c4337bfc3f37" name="Accounting Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5114fb76-e479-4dcd-8794-999c34370d8f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="12dabcf0-49cb-499d-8362-38d705f403ba" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f9474a8f-eb26-46db-a869-10fb7737560b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e5ccf693-cf37-4f0f-97ea-52d7c7f00573" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="9e245f23-860a-4342-bf45-64cba3e30dde" name="Accounting Database System" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c65c592e-93d8-4e06-84c6-69f21ee0336e" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="31151091-aac5-468d-8610-888447a03055" name="Retrieve Processing Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="abdfc3a8-98eb-433c-b9e7-4433e69b882c" />
+        <suppliersInternal>
+          <dependency Id="e81c3a9d-ffe2-49db-9019-4bae806c72af">
+            <actorMoniker Id="01a0c43d-f3ea-498e-8d0d-59adaefe4e3d" LastKnownName="Processing Database" />
+            <elementDefinition Id="0c8f1e8a-c80b-4722-b479-11d9889de0aa" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="df61cc84-40e7-4860-a137-f903b69fff65">
+            <useCaseMoniker Id="3b2dd60c-5cfe-406f-b6bb-7a87daa244b8" LastKnownName="Create Databse and Add slots for status and Billing Invoice Number" />
+            <elementDefinition Id="ca93cf60-8829-4354-8847-f3f012e5c2b9" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="9e245f23-860a-4342-bf45-64cba3e30dde" LastKnownName="Accounting Database System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3b2dd60c-5cfe-406f-b6bb-7a87daa244b8" name="Create Databse and Add slots for status and Billing Invoice Number" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="edb0b7aa-b5b8-4a46-a615-722d9a2bd310" />
+        <subjects>
+          <subsystemMoniker Id="9e245f23-860a-4342-bf45-64cba3e30dde" LastKnownName="Accounting Database System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f378f41f-f208-487a-a608-a6aaf0201e96" name="Create Directory Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="906bb6b4-5466-42e7-82be-cc39c058d70e" />
+        <additions>
+          <include Id="6e7bbee0-e241-4779-a0a6-84cff304f58a">
+            <useCaseMoniker Id="8c16b504-b992-417a-8aaf-a534073865d5" LastKnownName="Path to Folder" />
+            <elementDefinition Id="bef1741a-c868-4013-b34a-2ba52257e163" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="9e245f23-860a-4342-bf45-64cba3e30dde" LastKnownName="Accounting Database System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8c16b504-b992-417a-8aaf-a534073865d5" name="Path to Folder" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1788a7ab-9bd2-4964-b9d5-84930e7c7edc" />
+        <additions>
+          <include Id="2697fae2-4f35-495b-8e74-5ae5059faa00">
+            <useCaseMoniker Id="c2339749-a606-4ce5-9744-1811be10ad29" LastKnownName="Save Path to Settings" />
+            <elementDefinition Id="fae88f6a-d301-4e1a-9d1c-295d89b4345f" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="9e245f23-860a-4342-bf45-64cba3e30dde" LastKnownName="Accounting Database System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c2339749-a606-4ce5-9744-1811be10ad29" name="Save Path to Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c11edc2-9617-42d0-8927-91f8f7ea936e" />
+        <targetEnds>
+          <association Id="f3870b12-94bc-4683-863c-c405be252f4f" isDerived="false" sourceEndRoleName="Save to Settings" targetEndRoleName="Settings" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="2b3bfef7-13cf-45c8-bf99-73abdb2bd723" LastKnownName="Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ddf615e0-cf94-452b-a823-f407dd59e6f1" name="Save to Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="90b31852-9648-41f8-b09e-1b7d63526b22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2d485c7-afb9-4123-8311-d2091f5766c2" name="Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="01b66ac0-397b-4fd1-843e-fd38e6e28f7c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a045209c-00b2-456c-b383-d67ccae117ef" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="9e245f23-860a-4342-bf45-64cba3e30dde" LastKnownName="Accounting Database System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="2b3bfef7-13cf-45c8-bf99-73abdb2bd723" name="Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ddeafdef-144f-4b52-956f-bd5ac79ee799" />
+        <targetEnds>
+          <association Id="5d6a2641-19fd-4c73-a64f-2add8c245d98" isDerived="false" sourceEndRoleName="Settings" targetEndRoleName="Change Settings" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8f2097c9-9954-4294-a08f-d28e0c9f1d2b" LastKnownName="Change Path Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aee020b5-819a-45cd-9ed3-f7dbbc8432db" name="Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0d102e69-88c0-4877-8229-21dbe5eb1f42" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0ebb7a4-1bbd-4787-bbdf-9936d00207aa" name="Change Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9dfbff51-579c-4e9d-8d6f-f62ae4213753" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c9098702-8cb1-4dea-b04a-90aefd778e4c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="9194db0a-07e9-49dc-8428-5bd3f41b3f06" name="Settings" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="03c8e506-72c2-490b-8504-3bf672eca869" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="8f2097c9-9954-4294-a08f-d28e0c9f1d2b" name="Change Path Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="96f2a31a-4135-4e3f-b4e4-500d7e723659" />
+        <subjects>
+          <subsystemMoniker Id="9194db0a-07e9-49dc-8428-5bd3f41b3f06" LastKnownName="Settings" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="61ced242-e617-4597-850b-f094df40f4c8" name="Source Path" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f0c8642-3758-4062-ba14-9bbe95857f0a" />
+        <generalsInternal>
+          <generalization Id="daab89a2-9ef4-4b10-ba12-b64ba845d132" isSubstitutable="false">
+            <useCaseMoniker Id="8f2097c9-9954-4294-a08f-d28e0c9f1d2b" LastKnownName="Change Path Settings" />
+            <elementDefinition Id="feff2012-71b9-4047-85b7-ce0efad0b838" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="9194db0a-07e9-49dc-8428-5bd3f41b3f06" LastKnownName="Settings" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b5ca2a70-dffa-467c-a870-42ac6cedbf73" name="Processing Database Path" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="02fa33c3-7ebc-43a0-aa45-b5ad00de771b" />
+        <generalsInternal>
+          <generalization Id="920e7b96-7f7b-491a-87eb-ad31888f64c2" isSubstitutable="false">
+            <useCaseMoniker Id="8f2097c9-9954-4294-a08f-d28e0c9f1d2b" LastKnownName="Change Path Settings" />
+            <elementDefinition Id="f328eab3-05db-4984-ad51-0fc7a1e5ff64" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="9194db0a-07e9-49dc-8428-5bd3f41b3f06" LastKnownName="Settings" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="810629f6-488a-4d37-86fb-bc4e295a11e9" name="Sorted By Company " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d3dafe4a-5d04-444a-ab4d-d6fda0b1fd19" />
+        <additions>
+          <include Id="ff7f4c75-d1a7-453c-b11c-791aa5f15735">
+            <useCaseMoniker Id="4bc126d1-1476-448f-bdc3-a0150a562a2a" LastKnownName="Sorted by Transaction" />
+            <elementDefinition Id="511957e1-dba0-48ac-9bb8-a91aab2c0b87" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="4000d2d7-8c03-4142-bede-a198d6205f4a" LastKnownName="Accounting Department" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4bc126d1-1476-448f-bdc3-a0150a562a2a" name="Sorted by Transaction" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb28f36f-d565-42cd-b461-445747ee668e" />
+        <subjects>
+          <subsystemMoniker Id="4000d2d7-8c03-4142-bede-a198d6205f4a" LastKnownName="Accounting Department" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="c0de0682-a0df-423f-9f6d-4ccc34ecb490" name="FUSOproject_UML">
+    <elementDefinition Id="05562cb4-d7bc-4f93-a107-62af26c9e1e3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8caaf035-1b24-4f28-b15e-753ad0214665">
+        <profileInstance Id="793c0371-7590-42fa-835b-ff9be708a675" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="96e52fff-2e43-4875-b1be-476e7409139a">
+        <profileInstance Id="defae15c-ba94-40fe-959e-df1566da561f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,1045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="05562cb4-d7bc-4f93-a107-62af26c9e1e3"
+  name="FUSOproject_UML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="e61168b6-d5cb-4c23-812f-f183431898a0">
+      <body>Processing Department Data Flow</body>
+      <annotatedElements>
+        <subsystemMoniker
+          Id="e057eb82-b7c0-447a-a8e8-bb35da2c0810"
+          LastKnownName="Processing Department System"
+          LastKnownLocation="FUSOproject_UML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="f6416b25-a8f8-438f-b825-01b4bd186ed5">
+      <body>Accounting Department Dataflow</body>
+      <annotatedElements>
+        <subsystemMoniker
+          Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e"
+          LastKnownName="Accounting Department"
+          LastKnownLocation="FUSOproject_UML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="6b22d3cc-f9e3-4cba-96db-68420d19be97">
+      <body>Functions of the Accounting Database System</body>
+      <annotatedElements>
+        <subsystemMoniker
+          Id="c65c592e-93d8-4e06-84c6-69f21ee0336e"
+          LastKnownName="Accounting Database System"
+          LastKnownLocation="FUSOproject_UML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="c230ffdb-57a7-4fd3-8a7b-df31fa1c9c31">
+      <body>Functions of the Settings</body>
+      <annotatedElements>
+        <subsystemMoniker
+          Id="03c8e506-72c2-490b-8504-3bf672eca869"
+          LastKnownName="Settings"
+          LastKnownLocation="FUSOproject_UML.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="90a2f071-d39d-4bb4-8d81-f91f5dda54b6"
+        name="Processing"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0e1e0d22-9c89-4117-aa27-0ac60890e1ba"
+            isDerived="false"
+            sourceEndRoleName="Processing"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="76c1fee3-091d-4654-9066-fa542e152594"
+              LastKnownName="Process Documents"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="93baf263-01c5-4dd4-8733-da908a2cead3"
+                  name="Processing"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b3d421c-7ec1-494c-9a51-f689ba37ff35"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4200af93-c691-47e5-856c-336433ce1ff2"
+            isDerived="false"
+            sourceEndRoleName="Processing"
+            targetEndRoleName="Create Job Orders"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1c5ec47c-e2ed-4412-a64c-5fa2edb41efb"
+              LastKnownName="Create Job Orders"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3738962c-f53d-4034-bcb1-715721836190"
+                  name="Processing"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="866c30f7-e19a-47d8-a288-386363c652b4"
+                  name="Create Job Orders"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="76c1fee3-091d-4654-9066-fa542e152594"
+        name="Process Documents"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="fd26ce52-a877-480b-8332-a11e6e12d452">
+            <useCaseMoniker
+              Id="15f2c668-6909-45e5-bc8f-8a1f0dfa9b29"
+              LastKnownName="Log to Processing Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+          <include
+            Id="88382d9f-381a-4d14-8c22-0c46da2fd3dc">
+            <useCaseMoniker
+              Id="da164324-e222-4c08-87a1-3f25b85bb5ca"
+              LastKnownName="Print Permits"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="e057eb82-b7c0-447a-a8e8-bb35da2c0810"
+            LastKnownName="Processing Department System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="e057eb82-b7c0-447a-a8e8-bb35da2c0810"
+        name="Processing Department System"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="15f2c668-6909-45e5-bc8f-8a1f0dfa9b29"
+        name="Log to Processing Database"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ae144bbe-3a83-4f6a-a7dc-3d740640b38a"
+            isDerived="false"
+            sourceEndRoleName="Log to Processing Database"
+            targetEndRoleName="Processing Database"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="2304b93b-47d4-4051-8953-ed99baff8af8"
+              LastKnownName="Processing Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d83f817-00bc-44a5-827a-f20314f36a1e"
+                  name="Log to Processing Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83e49e54-225e-4bd0-a3d6-317346e581aa"
+                  name="Processing Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="e057eb82-b7c0-447a-a8e8-bb35da2c0810"
+            LastKnownName="Processing Department System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="da164324-e222-4c08-87a1-3f25b85bb5ca"
+        name="Print Permits"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e057eb82-b7c0-447a-a8e8-bb35da2c0810"
+            LastKnownName="Processing Department System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1c5ec47c-e2ed-4412-a64c-5fa2edb41efb"
+        name="Create Job Orders"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="bab00187-10a1-44e0-93b5-5b0e26b68b0d">
+            <useCaseMoniker
+              Id="76c1fee3-091d-4654-9066-fa542e152594"
+              LastKnownName="Process Documents"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include
+            Id="7b79ccfc-d187-4d7d-80c6-a898dda2f43a">
+            <useCaseMoniker
+              Id="e10058a3-e22b-4a20-b493-24b96c44522f"
+              LastKnownName="Update Document Entry in Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+          <include
+            Id="2ab2ad4b-c174-498e-b03f-f1d9a08921ca">
+            <useCaseMoniker
+              Id="a3b90622-10b3-452a-8c7c-05b46c6dceb2"
+              LastKnownName="Print Job Orders"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="e057eb82-b7c0-447a-a8e8-bb35da2c0810"
+            LastKnownName="Processing Department System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e10058a3-e22b-4a20-b493-24b96c44522f"
+        name="Update Document Entry in Database"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4daa3313-f20b-4031-a579-5bf04e1392d2"
+            isDerived="false"
+            sourceEndRoleName="Update Document Entry in Database"
+            targetEndRoleName="Processing Database"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="2304b93b-47d4-4051-8953-ed99baff8af8"
+              LastKnownName="Processing Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="13b1543b-0673-4cc1-802f-abde96694c85"
+                  name="Update Document Entry in Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80e22648-7c80-4196-91db-6d2fe4cf829c"
+                  name="Processing Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="e057eb82-b7c0-447a-a8e8-bb35da2c0810"
+            LastKnownName="Processing Department System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a3b90622-10b3-452a-8c7c-05b46c6dceb2"
+        name="Print Job Orders"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e057eb82-b7c0-447a-a8e8-bb35da2c0810"
+            LastKnownName="Processing Department System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="2304b93b-47d4-4051-8953-ed99baff8af8"
+        name="Processing Database"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e594b7a2-4d0a-428a-b66e-05271363cb5c"
+        name="Accounting"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5581b4bc-a268-403a-89dd-ff418c45e176"
+            isDerived="false"
+            sourceEndRoleName="Accounting"
+            targetEndRoleName="Create Billing Invoices"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="71a52b70-c314-4f10-ab68-b67ca4e73408"
+              LastKnownName="Create Billing Invoices"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b7283002-c602-4303-9520-f932ad9b7026"
+                  name="Accounting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0775dd98-9d71-4e10-be00-58a25423c97b"
+                  name="Create Billing Invoices"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e"
+        name="Accounting Department"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="71a52b70-c314-4f10-ab68-b67ca4e73408"
+        name="Create Billing Invoices"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9b37ceb5-f339-4de5-aec2-36a2d2da0499"
+            isDerived="false"
+            sourceEndRoleName="Create Billing Invoices"
+            targetEndRoleName="Accounting Database"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="7107d373-0a48-47d4-9fa9-75fb39e95bfc"
+              LastKnownName="Accounting Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f06ae9aa-974f-443d-b87c-117efef69ec2"
+                  name="Create Billing Invoices"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d0f1569-84b4-407b-a750-55de4e10b6b7"
+                  name="Accounting Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="2e0f51de-70f8-44e9-8ddb-ce3a1f9a4b2d">
+            <useCaseMoniker
+              Id="b04e085f-13dd-4fa1-bbd8-34007ef4c52e"
+              LastKnownName="Update Accounting Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+          <include
+            Id="b7f955f7-0a92-4e5d-8b74-ad17d7aa6c67">
+            <useCaseMoniker
+              Id="0b790bf1-f554-4f2d-8691-4d29bdc355de"
+              LastKnownName="Print Billing Invoice"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+          <include
+            Id="f26af460-f0f5-47a8-b453-ce360b9696a3">
+            <useCaseMoniker
+              Id="d3dafe4a-5d04-444a-ab4d-d6fda0b1fd19"
+              LastKnownName="Sorted By Company "
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e"
+            LastKnownName="Accounting Department"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f60f00ec-b292-4841-a1ac-6efe5531a51c"
+        name="Job Orders"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="b749f7cb-4d13-4f41-acc3-0a398dba33fc"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="71a52b70-c314-4f10-ab68-b67ca4e73408"
+              LastKnownName="Create Billing Invoices"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e"
+            LastKnownName="Accounting Department"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="61b25354-6c7c-4924-a504-967946dd893e"
+        name="Non-Job Orders"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="2edae14f-9a83-462a-a8d1-0a500474df23"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="71a52b70-c314-4f10-ab68-b67ca4e73408"
+              LastKnownName="Create Billing Invoices"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e"
+            LastKnownName="Accounting Department"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b04e085f-13dd-4fa1-bbd8-34007ef4c52e"
+        name="Update Accounting Database"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0ccbe335-beeb-4bca-83df-b98ddb28dcda"
+            isDerived="false"
+            sourceEndRoleName="Log to Accounting Database"
+            targetEndRoleName="Accounting Database"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="7107d373-0a48-47d4-9fa9-75fb39e95bfc"
+              LastKnownName="Accounting Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="012921cc-5d5e-4cb1-a99f-1bb30a409d46"
+                  name="Log to Accounting Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c853869e-58e2-49dc-92b0-0675f97c76a7"
+                  name="Accounting Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e"
+            LastKnownName="Accounting Department"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0b790bf1-f554-4f2d-8691-4d29bdc355de"
+        name="Print Billing Invoice"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e"
+            LastKnownName="Accounting Department"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7107d373-0a48-47d4-9fa9-75fb39e95bfc"
+        name="Accounting Database"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c91a8d8a-debd-46ec-88d1-2db328ec696d"
+            isDerived="false"
+            sourceEndRoleName="Accounting Database"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="abdfc3a8-98eb-433c-b9e7-4433e69b882c"
+              LastKnownName="Retrieve Processing Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3af83eb8-6f50-452f-9e4a-3e7b5ca34b0e"
+                  name="Accounting Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b1042a7-84ef-48ff-ac86-bc3c4ca6b249"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e5ccf693-cf37-4f0f-97ea-52d7c7f00573"
+            isDerived="false"
+            sourceEndRoleName="Accounting Database"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="906bb6b4-5466-42e7-82be-cc39c058d70e"
+              LastKnownName="Create Directory Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5114fb76-e479-4dcd-8794-999c34370d8f"
+                  name="Accounting Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f9474a8f-eb26-46db-a869-10fb7737560b"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c65c592e-93d8-4e06-84c6-69f21ee0336e"
+        name="Accounting Database System"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="abdfc3a8-98eb-433c-b9e7-4433e69b882c"
+        name="Retrieve Processing Database"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="0c8f1e8a-c80b-4722-b479-11d9889de0aa">
+            <actorMoniker
+              Id="2304b93b-47d4-4051-8953-ed99baff8af8"
+              LastKnownName="Processing Database"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include
+            Id="ca93cf60-8829-4354-8847-f3f012e5c2b9">
+            <useCaseMoniker
+              Id="edb0b7aa-b5b8-4a46-a615-722d9a2bd310"
+              LastKnownName="Create Databse and Add slots for status and Billing Invoice Number"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="c65c592e-93d8-4e06-84c6-69f21ee0336e"
+            LastKnownName="Accounting Database System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="edb0b7aa-b5b8-4a46-a615-722d9a2bd310"
+        name="Create Databse and Add slots for status and Billing Invoice Number"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c65c592e-93d8-4e06-84c6-69f21ee0336e"
+            LastKnownName="Accounting Database System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="906bb6b4-5466-42e7-82be-cc39c058d70e"
+        name="Create Directory Database"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="bef1741a-c868-4013-b34a-2ba52257e163">
+            <useCaseMoniker
+              Id="1788a7ab-9bd2-4964-b9d5-84930e7c7edc"
+              LastKnownName="Path to Folder"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="c65c592e-93d8-4e06-84c6-69f21ee0336e"
+            LastKnownName="Accounting Database System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1788a7ab-9bd2-4964-b9d5-84930e7c7edc"
+        name="Path to Folder"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="fae88f6a-d301-4e1a-9d1c-295d89b4345f">
+            <useCaseMoniker
+              Id="9c11edc2-9617-42d0-8927-91f8f7ea936e"
+              LastKnownName="Save Path to Settings"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="c65c592e-93d8-4e06-84c6-69f21ee0336e"
+            LastKnownName="Accounting Database System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9c11edc2-9617-42d0-8927-91f8f7ea936e"
+        name="Save Path to Settings"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a045209c-00b2-456c-b383-d67ccae117ef"
+            isDerived="false"
+            sourceEndRoleName="Save to Settings"
+            targetEndRoleName="Settings"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="ddeafdef-144f-4b52-956f-bd5ac79ee799"
+              LastKnownName="Settings"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90b31852-9648-41f8-b09e-1b7d63526b22"
+                  name="Save to Settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01b66ac0-397b-4fd1-843e-fd38e6e28f7c"
+                  name="Settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="c65c592e-93d8-4e06-84c6-69f21ee0336e"
+            LastKnownName="Accounting Database System"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ddeafdef-144f-4b52-956f-bd5ac79ee799"
+        name="Settings"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c9098702-8cb1-4dea-b04a-90aefd778e4c"
+            isDerived="false"
+            sourceEndRoleName="Settings"
+            targetEndRoleName="Change Settings"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="96f2a31a-4135-4e3f-b4e4-500d7e723659"
+              LastKnownName="Change Path Settings"
+              LastKnownLocation="FUSOproject_UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d102e69-88c0-4877-8229-21dbe5eb1f42"
+                  name="Settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9dfbff51-579c-4e9d-8d6f-f62ae4213753"
+                  name="Change Settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="03c8e506-72c2-490b-8504-3bf672eca869"
+        name="Settings"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="96f2a31a-4135-4e3f-b4e4-500d7e723659"
+        name="Change Path Settings"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="03c8e506-72c2-490b-8504-3bf672eca869"
+            LastKnownName="Settings"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2f0c8642-3758-4062-ba14-9bbe95857f0a"
+        name="Source Path"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="feff2012-71b9-4047-85b7-ce0efad0b838"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="96f2a31a-4135-4e3f-b4e4-500d7e723659"
+              LastKnownName="Change Path Settings"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="03c8e506-72c2-490b-8504-3bf672eca869"
+            LastKnownName="Settings"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="02fa33c3-7ebc-43a0-aa45-b5ad00de771b"
+        name="Processing Database Path"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="f328eab3-05db-4984-ad51-0fc7a1e5ff64"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="96f2a31a-4135-4e3f-b4e4-500d7e723659"
+              LastKnownName="Change Path Settings"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="03c8e506-72c2-490b-8504-3bf672eca869"
+            LastKnownName="Settings"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d3dafe4a-5d04-444a-ab4d-d6fda0b1fd19"
+        name="Sorted By Company "
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="511957e1-dba0-48ac-9bb8-a91aab2c0b87">
+            <useCaseMoniker
+              Id="bb28f36f-d565-42cd-b461-445747ee668e"
+              LastKnownName="Sorted by Transaction"
+              LastKnownLocation="FUSOproject_UML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e"
+            LastKnownName="Accounting Department"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bb28f36f-d565-42cd-b461-445747ee668e"
+        name="Sorted by Transaction"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2d3a56ff-ae3a-4c46-8c77-dd3abeb9948e"
+            LastKnownName="Accounting Department"
+            LastKnownLocation="FUSOproject_UML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
