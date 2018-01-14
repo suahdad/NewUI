@@ -68,6 +68,7 @@
             this.crBI_btn.TabIndex = 1;
             this.crBI_btn.Text = "Create Billing Invoice";
             this.crBI_btn.UseVisualStyleBackColor = true;
+            this.crBI_btn.Click += new System.EventHandler(this.crBI_btn_Click);
             // 
             // Logo
             // 
@@ -98,6 +99,7 @@
             this.fndJO_txbx.Name = "fndJO_txbx";
             this.fndJO_txbx.Size = new System.Drawing.Size(168, 20);
             this.fndJO_txbx.TabIndex = 6;
+            this.fndJO_txbx.TextChanged += new System.EventHandler(this.fndJO_txbx_TextChanged);
             // 
             // label2
             // 
