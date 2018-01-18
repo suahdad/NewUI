@@ -9,3 +9,14 @@ C:\Users\Arandov\Desktop\FUSO\NewUI\WindowsFormsApplication1\obj\x86\Debug\Windo
 C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\obj\x86\Debug\FUSO Accounting.csproj.ResolveComReference.cache
 C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Options_frm.resources
 C:\Users\Arandov\Desktop\fuso\NewUI\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.MainUI_frm.resources
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\obj\x86\Debug\FUSO Accounting.csproj.ResolveComReference.cache
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\obj\x86\Debug\FUSO Accounting.csprojResolveAssemblyReference.cache
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.MainUI_frm.resources
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Options_frm.resources
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\REYNOSO\Desktop\soft eng\NewUI-master\NewUI-master\WindowsFormsApplication1\obj\x86\Debug\FUSO Accounting.csproj.GenerateResource.Cache
